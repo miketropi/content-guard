@@ -3,7 +3,7 @@
  * Plugin Name:       Content Guard - Copy Protection & Advertisement Popup
  * Plugin URI:        https://beplusthemes.com/content-guard/
  * Description:       Protect your content from copying, right-click, and DevTools access. Show advertisement popups (banner, AdSense, subscribe form, video, HTML) when violations are detected.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Beplus
  * Author URI:        https://beplusthemes.com/
  * License:           GPL-2.0+
@@ -21,7 +21,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Plugin constants.
-define( 'COGU_VERSION',    '1.0.1' );
+define( 'COGU_VERSION',    '1.0.2' );
 define( 'COGU_FILE',       __FILE__ );
 define( 'COGU_DIR',        plugin_dir_path( __FILE__ ) );
 define( 'COGU_URL',        plugin_dir_url( __FILE__ ) );
