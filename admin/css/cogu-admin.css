@@ -1,0 +1,82 @@
+/* Content Guard – Admin Styles */
+
+.cogu-admin-wrap { max-width: 960px; }
+
+/* Header */
+.cogu-header { display:flex; align-items:center; gap:16px; padding:24px 0 8px; border-bottom:1px solid #ddd; margin-bottom:24px; }
+.cogu-header-logo { display:flex; align-items:center; gap:12px; }
+.cogu-header-logo h1 { margin:0; font-size:22px; }
+.cogu-logo-icon { font-size:32px; line-height:1; }
+.cogu-version { font-size:11px; background:#f0f0f1; padding:2px 7px; border-radius:10px; color:#666; }
+.cogu-header-desc { margin:0 0 0 auto; color:#888; font-size:13px; }
+
+/* Tabs */
+.cogu-tabs-wrap { background:#fff; border:1px solid #c3c4c7; border-radius:4px; margin:16px 0 24px; }
+.cogu-tab-nav { display:flex; border-bottom:1px solid #c3c4c7; background:#f6f7f7; border-radius:4px 4px 0 0; overflow:hidden; flex-wrap:wrap; }
+.cogu-tab-btn {
+    padding:12px 20px; background:none; border:none; border-right:1px solid #c3c4c7;
+    cursor:pointer; font-size:13px; font-weight:600; color:#50575e;
+    transition:background .15s,color .15s; border-bottom:2px solid transparent; margin-bottom:-1px;
+}
+.cogu-tab-btn:hover { background:#fff; color:#2271b1; }
+.cogu-tab-btn.is-active { background:#fff; color:#2271b1; border-bottom-color:#2271b1; }
+.cogu-tab-panel { padding:24px 28px; }
+
+/* Toggle switches */
+.cogu-toggle-label { display:inline-flex; align-items:center; gap:10px; cursor:pointer; }
+.cogu-toggle-input { position:absolute; opacity:0; width:0; height:0; }
+.cogu-toggle-track {
+    position:relative; display:inline-block; width:44px; height:24px; flex-shrink:0;
+    background:#ccc; border-radius:24px; transition:background .2s;
+}
+.cogu-toggle-input:checked + .cogu-toggle-track { background:#2271b1; }
+.cogu-toggle-thumb {
+    position:absolute; top:3px; left:3px; width:18px; height:18px;
+    background:#fff; border-radius:50%; transition:transform .2s; box-shadow:0 1px 3px rgba(0,0,0,.3);
+}
+.cogu-toggle-input:checked + .cogu-toggle-track .cogu-toggle-thumb { transform:translateX(20px); }
+.cogu-toggle-desc { font-size:13px; color:#555; }
+.cogu-form-table th { width:220px; }
+
+/* Ad type grid */
+.cogu-ad-type-grid { display:flex; flex-wrap:wrap; gap:12px; margin:0 0 24px; }
+.cogu-ad-type-card {
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+    padding:16px 20px; border:2px solid #ddd; border-radius:8px;
+    cursor:pointer; min-width:130px; transition:all .2s;
+    background:#fafafa; text-align:center;
+}
+.cogu-ad-type-radio { position:absolute; opacity:0; }
+.cogu-ad-type-card:hover { border-color:#aaa; background:#fff; }
+.cogu-ad-type-card.is-selected { border-color:#2271b1; background:#f0f6fc; }
+.cogu-ad-type-icon { font-size:28px; line-height:1; }
+.cogu-ad-type-name { font-weight:700; font-size:13px; }
+.cogu-ad-type-desc { font-size:11px; color:#888; line-height:1.4; }
+
+/* Ad config panels */
+.cogu-ad-config { padding:20px 0 8px; }
+.cogu-ad-config h4 { font-size:15px; margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid #eee; }
+
+/* Media uploader row */
+.cogu-media-row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.cogu-media-url { flex:1; }
+.cogu-banner-preview { margin-top:10px; }
+.cogu-banner-preview img { max-width:300px; max-height:200px; border:1px solid #ddd; border-radius:4px; }
+
+/* Checkbox scrollable list */
+.cogu-checkbox-scroll { max-height:200px; overflow-y:auto; padding:10px 12px; border:1px solid #ddd; border-radius:4px; background:#fafafa; }
+
+/* Divider */
+.cogu-divider { margin:24px 0; border:none; border-top:1px solid #eee; }
+
+/* Section title */
+.cogu-section-title { font-size:15px; margin:0 0 16px; }
+
+/* Shortcode docs */
+.cogu-shortcode-docs h3 { font-size:17px; margin:0 0 8px; }
+.cogu-shortcode-docs > p { margin-bottom:20px; color:#555; }
+.cogu-code-block { background:#f0f0f1; border-radius:6px; padding:16px 20px; margin-bottom:16px; }
+.cogu-code-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#888; margin-bottom:8px; }
+.cogu-code-block code { display:block; font-size:13px; word-break:break-all; line-height:1.6; }
+.cogu-shortcode-attrs { margin-top:24px; }
+.cogu-shortcode-attrs h4 { margin:0 0 10px; }
